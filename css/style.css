@@ -31,8 +31,8 @@ p {
   font-family: "Rubik", sans-serif;
 }
 
-.h_100 {
-  height: 100vh;
+.h_50 {
+  height: 90vh;
 }
 
 .center {
@@ -119,6 +119,10 @@ h4 {
   padding: 18px 50px !important;
   text-decoration: none !important;
   border-radius: 50px !important;
+  font-size: 18px;
+}
+.bg_orange:hover {
+  background-color: #ca6217;
 }
 
 .abu {
@@ -131,54 +135,63 @@ h4 {
   padding: 24px 40px !important;
   text-decoration: none !important;
   border-radius: 50px;
+  font-size: 14px;
+}
+.outline_orange:hover {
+  border: 2px solid #ff9142;
+  background: #ff9142 !important;
+  color: #ffffff;
+  padding: 24px 40px !important;
+  text-decoration: none !important;
+  border-radius: 50px;
+  font-size: 14px;
 }
 .outline_abu {
   border: 2px solid #8d8d8d !important;
   color: #ffffff !important;
   background-color: transparent;
-  padding: 10px 35px !important;
+  padding: 8px 20px !important;
   text-decoration: none !important;
   border-radius: 50px;
   margin-left: 78px;
+  font-size: 14px;
 }
 .outline_abu:hover {
   border: 2px solid #ff9142 !important;
-  color: #ffffff !important;
-  background-color: #ff9142;
-  padding: 10px 35px !important;
-  text-decoration: none !important;
-  border-radius: 50px;
-  margin-left: 78px;
+  font-size: 14px !important;
 }
 
 /* LAYOUT DUNIAWI */
 .gradient_1 {
   position: absolute;
-  width: 617.142px;
-  right: 40px;
-  top: 100px;
+  /* width: 617.142px; */
+  right: 0;
+  top: 0;
   filter: blur(100px);
+  z-index: -2;
 }
 .gradient_2 {
-  position: absolute;
+  display: none;
+  /* position: absolute;
   width: 617.142px;
   left: -80px;
   top: -350px;
-  filter: blur(100px);
+  filter: blur(100px); */
 }
 .gradient_3 {
-  position: absolute;
+  display: none;
+  /* position: absolute;
   width: 617.142px;
   right: -160px;
   top: -290px;
-  filter: blur(100px);
+  filter: blur(100px); */
 }
 
 /* ELEMENT COMPONENT */
 /* header */
-header {
+/* header {
   padding: 24px 0;
-}
+} */
 body.hero-anime p {
   opacity: 0;
   transform: translateY(40px);
@@ -190,7 +203,7 @@ body.hero-anime #switch {
   transition-delay: 1900ms;
 }
 .navigation-wrap {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
@@ -220,9 +233,9 @@ nav ul li a {
   text-decoration: none !important;
   color: #8d8d8d !important;
 }
-nav ul li a:hover {
+/* nav ul li a:hover {
   font-size: 14px !important;
-}
+} */
 
 .navbar-light .navbar-brand {
   color: white;
@@ -334,15 +347,34 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .outline_abu {
     margin-left: 0px !important;
   }
+  .md-d-none {
+    display: none !important;
+  }
+  .md-fs-20 {
+    fomt-size: 20px !important;
+  }
+  .ms-fs-30 {
+    font-size: 40px !important;
+  }
+  .md-fs-22 {
+    font-size: 22px !important;
+  }
+
+  .md-mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 @media (max-width: 575.98px) {
   .m575_width {
     margin-top: 4rem !important;
   }
+  .text-md-center {
+    text-align: center !important;
+  }
 }
-@media (min-width: 767.98px) {
-  /* jika ukuran layar paling min 767 */
+/* @media (min-width: 767.98px) {
   .m767_width {
     width: 900px !important;
   }
-}
+} */
